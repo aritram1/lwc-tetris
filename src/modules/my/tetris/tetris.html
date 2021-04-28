@@ -1,0 +1,23 @@
+<template>
+    <div class="container">
+        <div class="header">
+            <div class="score"> Score : {score} </div>
+            <div class="next-shape"> 
+                <template for:each={nextShape} for:item="shape">
+                    <div key={shape.key} class={shape.class}>
+                        <!-- {shape.key} class={shape.class}12 -->
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="content">
+            <div class="game-arena">
+                <template for:each={gameBlocks} for:item="block">
+                    <div data-key={block.key} key={block.key} class={block.class} onclick={showInfo}>
+                        <!-- {block.key} -->
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,63 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+.container{
+    width: minmax(50%, 80%);
+    height: minmax(70vh,90vh);
+    display: inline-block;
+    /* margin: 10px auto; */
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 3.5vh;
+    height: 3.5vh;
+    /* height: auto; */
+    color: white;
+}
+
+.score{
+    background-color: rgb(61, 83, 156);
+    text-align: auto;
+}
+
+.next-shape{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2px;
+}
+
+.next-shape > div{
+    margin: 1px;
+    /* border: 1px solid red; */
+}
+
+.content{
+    /* background-color: blue; */
+}
+
+.game-arena{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(16,8px);
+    grid-template-rows: repeat(32, 8px);
+    padding-top: 5px;
+    /* background-color: blueviolet; */
+}
+
+.game-arena > div{
+    /* padding: 20px; */
+    background-color: turquoise;
+    font-size: small;
+}
+
+.on-shape{
+    background-color: black;
+}
+
+.on{
+    background-color: purple !important;
+}
